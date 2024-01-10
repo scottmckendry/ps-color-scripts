@@ -16,5 +16,7 @@ $manifestParams = @{
     "PassThru"             = $true
 }
 
+Copy-Item -Path "./README.md" -Destination "./ps-color-scripts/README.md" -Force -ErrorAction SilentlyContinue
 Remove-Item -Path "./ps-color-scripts/ps-color-scripts.psd1" -Force -ErrorAction SilentlyContinue
 New-ModuleManifest @manifestParams
+
