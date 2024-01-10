@@ -4,6 +4,8 @@ An _almost_ like for like port of Derek Taylor's Popular [shell-color-scripts](h
 
 Painstakingly ported to PowerShell from the original Bash scripts, this module provides a collection of color scripts to brighten up your PowerShell terminal.
 
+![demo](https://github.com/scottmckendry/ps-color-scripts/assets/39483124/3b1edc7b-6d71-4bcd-92c4-b9ca6f1bc8b9)
+
 ## 📦 Installation
 
 The module is available on the [PowerShell Gallery](https://www.powershellgallery.com/packages/ps-color-scripts/) and can be installed using the following command.
@@ -35,6 +37,8 @@ Get-ColorScript -List
 ## 🧑‍🍳 Recipes
 
 #### Add to your PowerShell profile to display a random color script on startup.
+
+![image](https://github.com/scottmckendry/ps-color-scripts/assets/39483124/7cd6a8a3-94bb-4e1b-801d-926568b82e9d)
 
 ```powershell
 $profilePath = $PROFILE.CurrentUserAllHosts
