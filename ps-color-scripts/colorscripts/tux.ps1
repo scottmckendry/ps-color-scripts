@@ -1,46 +1,42 @@
 $esc = "`e"
 
+$blackf = "$($esc)[30m"
 $yellowb = "$($esc)[43m"
 $whiteb = "$($esc)[47m"
-$tuxfg = "$($esc)[38;5;15m"
-
 $reset = "$($esc)[0m"
-$tuxfg = "$($esc)[30m"
-$tuxbg = "$($esc)[40m"
 
 Write-Host @"
 
-$($tuxfg)$($tuxbg)
                                                      
-                      ▄█████▄                        
-                     █████████                       
-                    $($whiteb)████████▀██$($tuxbg)                      
-                   $($whiteb)██████████▄██$($tuxbg)                     
-                   $($whiteb)██▀▀███▀▀████$($tuxbg)                     
-                   $($whiteb)████ █ ██ ███$($tuxbg)                     
-                   $($yellowb)█         ████$($tuxbg)                    
-                   $($yellowb)█       ▄ ████$($tuxbg)                    
-                   $($yellowb)███▀▀▀▀▀▄$($whiteb)▀████$($tuxbg)                    
-                   $($whiteb)██▀▀▀▀▀▀   ███$($tuxbg)▄                   
-                 ▄█$($whiteb)▀          █████$($tuxbg)                  
-                $($whiteb)███           ██████$($tuxbg)                 
-               $($whiteb)███             ██████$($tuxbg)                
-              $($whiteb)█▀██              ██████$($tuxbg)               
-              $($whiteb)█ █               █ ████$($tuxbg)               
-              $($whiteb)█ █               ██ ███$($tuxbg)               
-             $($whiteb)██ ▀               █▀ ████$($tuxbg)              
-             $($whiteb)███                   ████$($tuxbg)              
-            $($whiteb)█████               ███ ███$($tuxbg)              
-            $($yellowb)█▀▀███$($whiteb)             █████████$($tuxbg)             
-           ▄$($yellowb)█   ███$($whiteb)           █$($yellowb)▀ ████  ▀█$($tuxbg)            
-         ▄█$($yellowb)▀     ████$($whiteb)         █$($yellowb)   ▀     █$($tuxbg)            
-        █$($yellowb)         ████$($whiteb)     █  █$($yellowb)         ██$($tuxbg)           
-         █$($yellowb)         ██$($whiteb)       █ █$($yellowb)          ▀█$($tuxbg)          
-        █$($yellowb)           █$($whiteb)      █  █$($yellowb)          █$($tuxbg)           
-        █$($yellowb)           ███████████$($yellowb)        ▄$($tuxbg)▀            
-         █$($yellowb)▄         █$($tuxbg) ▀▀▀▀▀▀▀ █$($yellowb)      ▄$($tuxbg)▀              
-           ▀▀▀▀▀$($yellowb)▄▄▄█$($tuxbg)▀         ▀$($yellowb)▄    █$($tuxbg)                
-                                ▀▀▀▀$($tuxbg)                 
+                      $($blackf)▄█████▄$($reset)          
+                     $($blackf)█████████$($reset)     
+                    $($blackf)████████$($whiteb)▀██$($reset)                      
+                   $($blackf)█████████$($whiteb)█▄██$($reset)                     
+                   $($blackf)██$($whiteb)▀▀███▀▀████$($reset)                     
+                   $($blackf)███$($whiteb)█ █ ██ ███$($reset)                     
+                   $($blackf)$($yellowb)█         ████$($reset)                    
+                   $($blackf)$($yellowb)█       ▄ ████$($reset)                    
+                   $($blackf)$($yellowb)███▀▀▀▀▀▄$($blackf)▀████$($reset)                    
+                   $($blackf)██$($whiteb)▀▀▀▀▀▀   ███$($reset)$($blackf)▄                   
+                 $($blackf)▄█$($whiteb)▀          █████$($reset)                  
+                $($blackf)███$($whiteb)           ██████$($reset)                 
+               $($blackf)███$($whiteb)             ██████$($reset)                
+              $($blackf)█$($whiteb)▀██              ██████$($reset)               
+              $($blackf)█$($whiteb) █               █ ████$($reset)               
+              $($blackf)█$($whiteb) █               ██ ███$($reset)               
+             $($blackf)██$($whiteb) ▀               █▀ ████$($reset)              
+             $($blackf)███$($whiteb)                   ████$($reset)              
+            $($blackf)█████$($whiteb)               ███ ███$($reset)              
+            $($blackf)$($yellowb)█▀▀███$($whiteb)             █████████$($reset)             
+           $($blackf)▄$($yellowb)█   ███$($whiteb)           █$($yellowb)▀ ████  ▀█$($reset)            
+         $($blackf)▄█$($yellowb)▀     ████$($whiteb)         █$($yellowb)   ▀     █$($reset)            
+        $($blackf)█$($yellowb)         ████$($whiteb)     █  █$($yellowb)         ██$($reset)           
+         $($blackf)█$($yellowb)         ██$($whiteb)       █ █$($yellowb)          ▀█$($reset)          
+        $($blackf)█$($yellowb)           █$($whiteb)      █  █$($yellowb)          █$($reset)           
+        $($blackf)█$($yellowb)           ███████████$($yellowb)        ▄$($reset)$($blackf)▀            
+         $($blackf)█$($yellowb)▄         █$($reset)$($blackf) ▀▀▀▀▀▀▀ █$($yellowb)      ▄$($reset)$($blackf)▀              
+           $($blackf)▀▀▀▀▀$($yellowb)▄▄▄█$($reset)$($blackf)▀         ▀$($yellowb)▄    █$($reset)                
+                                $($blackf)▀▀▀▀$($reset)                 
 $($reset)
 
 "@
