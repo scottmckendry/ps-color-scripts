@@ -9,11 +9,14 @@ jobs:
     publish-to-gallery:
         runs-on: ubuntu-latest
         steps:
+            - name: Set Timezone
+              run: sudo timedatectl set-timezone Pacific/Auckland
+
             - uses: actions/checkout@v4
             - name: Build and publish
               env:
                   NUGET_KEY: ${{ secrets.NUGET_KEY }}
               shell: pwsh
               run: |
-                ./build.ps1
-                Publish-Module -Path ./ps-color-scripts -NuGetApiKey $env:NUGET_KEY -Verbose
+                  ./build.ps1
+                  Publish-Module -Path ./ps-color-scripts -NuGetApiKey $env:NUGET_KEY -Verbose
