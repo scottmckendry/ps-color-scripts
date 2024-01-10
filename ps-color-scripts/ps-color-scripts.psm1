@@ -41,7 +41,8 @@ function Show-ColorScript {
         if ($script) {
             # Run script
             & $script.FullName
-        } else {
+        }
+        else {
             Write-Error "Script '$Name' not found"
         }
 
@@ -56,3 +57,6 @@ function Show-ColorScript {
     # Run script
     & $script.FullName
 }
+
+Export-ModuleMember -Function Show-ColorScript
+
