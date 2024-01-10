@@ -1,6 +1,7 @@
 name: Publish PowerShell Module
 
 on:
+  workflow_dispatch:
   release:
     types: [created]
 
