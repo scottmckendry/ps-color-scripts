@@ -1,17 +1,22 @@
-$esc = "`e"
+$f1="`e[30m"
+$f2="`e[31m"
+$f3="`e[32m"
+$f4="`e[33m"
+$f5="`e[34m"
+$f6="`e[35m"
 
-foreach ($j in "f", "b") {
-  for ($i = 0; $i -le 7; $i++) {
-    Set-Variable -Name "$j$i" -Value "$($esc)[${!j}${i}m"
-  }
-}
-for ($i = 0; $i -le 7; $i++) {
-    Set-Variable -Name "fbright$i" -Value "$($esc)[9${i}m"
-}
-$bld = "$($esc)[1m"
-$rst = "$($esc)[0m"
+$fbright1="`e[90m"
+$fbright2="`e[91m"
+$fbright3="`e[92m"
+$fbright4="`e[93m"
+$fbright5="`e[94m"
+$fbright6="`e[95m"
+
+$bld="`e[1m"
+$rst="`e[0m"
 
 Write-Host @"
+
 
  $f1█-----$bld$fbright1█  $rst$f2█-----$bld$fbright2█$rst  $f3█-----$bld$fbright3█$rst  $f4█-----$bld$fbright4█$rst  $f5█-----$bld$fbright5█$rst  $f6█-----$bld$fbright6█$rst
   $f1█---$bld$fbright1█$rst    $f2█---$bld$fbright2█$rst    $f3█---$bld$fbright3█$rst    $f4█---$bld$fbright4█$rst    $f5█---$bld$fbright5█$rst    $f6█---$bld$fbright6█$rst
