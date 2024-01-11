@@ -2,7 +2,7 @@ Write-Host
 for ($f = 0; $f -le 6; $f++) {
     Write-Host -NoNewline "`e[$(($f+41))m`e[$(($f+30))m██▓▒░"
 }
-Write-Host -NoNewline "`e[37m██`n`n"
+Write-Host -NoNewline "`e[37m██`e[0m`n`n"
 for ($f = 0; $f -le 6; $f++) {
     Write-Host -NoNewline "`e[$(($f+41))m`e[1;$(($f+90))m██▓▒░"
 }
