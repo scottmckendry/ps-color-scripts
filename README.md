@@ -31,7 +31,7 @@ Show-ColorScript -Name "pacman"
 **List**: List all available color scripts.
 
 ```powershell
-Get-ColorScript -List
+Show-ColorScript -List
 ```
 
 ## 🧑‍🍳 Recipes
