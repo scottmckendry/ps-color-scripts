@@ -1,19 +1,21 @@
-$f1="`e[30m"
-$f2="`e[31m"
-$f3="`e[32m"
-$f4="`e[33m"
-$f5="`e[34m"
-$f6="`e[35m"
+$esc = [char]27
 
-$fbright1="`e[90m"
-$fbright2="`e[91m"
-$fbright3="`e[92m"
-$fbright4="`e[93m"
-$fbright5="`e[94m"
-$fbright6="`e[95m"
+$f1 = "$esc[30m"
+$f2 = "$esc[31m"
+$f3 = "$esc[32m"
+$f4 = "$esc[33m"
+$f5 = "$esc[34m"
+$f6 = "$esc[35m"
 
-$bld="`e[1m"
-$rst="`e[0m"
+$fbright1 = "$esc[90m"
+$fbright2 = "$esc[91m"
+$fbright3 = "$esc[92m"
+$fbright4 = "$esc[93m"
+$fbright5 = "$esc[94m"
+$fbright6 = "$esc[95m"
+
+$bld = "$esc[1m"
+$rst = "$esc[0m"
 
 Write-Host @"
 

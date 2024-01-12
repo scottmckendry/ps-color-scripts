@@ -1,43 +1,42 @@
-$esc="`e"
+$esc = [char]27
 
-$Bf="$($esc)[30m"
-$rf="$($esc)[31m"
-$gf="$($esc)[32m"
-$yf="$($esc)[33m"
-$bf="$($esc)[34m"
-$pf="$($esc)[35m"
-$cf="$($esc)[36m"
+$blf = "$esc[30m"
+$rf = "$esc[31m"
+$gf = "$esc[32m"
+$yf = "$esc[33m"
+$bf = "$esc[34m"
+$pf = "$esc[35m"
+$cf = "$esc[36m"
 
-$Bfbright="$($esc)[90m"
-$rfbright="$($esc)[91m"
-$gfbright="$($esc)[92m"
-$yfbright="$($esc)[93m"
-$bfbright="$($esc)[94m"
-$pfbright="$($esc)[95m"
-$cfbright="$($esc)[96m"
+$rfbright = "$esc[91m"
+$gfbright = "$esc[92m"
+$yfbright = "$esc[93m"
+$bfbright = "$esc[94m"
+$pfbright = "$esc[95m"
+$cfbright = "$esc[96m"
 
-$ON="$($esc)[1m"
-$OFF="$($esc)[22m"
-$reset="$($esc)[0m"
+$ON = "$esc[1m"
+$OFF = "$esc[22m"
+$reset = "$esc[0m"
 
 Write-Host @"
 
-                       $($Bf)██                               $($Bf)████                    $($Bf)████                    $($Bf)████                    $($Bf)████                    $($Bf)████
-                     $($Bf)██$($yf)██$($Bf)██                           $($Bf)██$($gf)$($ON)$($gfbright)██$($OFF)$($gf)██$($Bf)██                $($Bf)██$($bf)$($ON)$($bfbright)██$($OFF)$($bf)██$($Bf)██                $($Bf)██$($rf)$($ON)$($rfbright)██$($OFF)$($rf)██$($Bf)██                $($Bf)██$($pf)$($ON)$($pfbright)██$($OFF)$($pf)██$($Bf)██                $($Bf)██$($cf)$($ON)$($cfbright)██$($OFF)$($cf)██$($Bf)██
-                   $($Bf)██$($yf)██████$($Bf)██                       $($Bf)██$($gf)$($ON)$($gfbright)████$($OFF)$($gf)████$($Bf)██            $($Bf)██$($bf)$($ON)$($bfbright)████$($OFF)$($bf)████$($Bf)██            $($Bf)██$($rf)$($ON)$($rfbright)████$($OFF)$($rf)████$($Bf)██            $($Bf)██$($pf)$($ON)$($pfbright)████$($OFF)$($pf)████$($Bf)██            $($Bf)██$($cf)$($ON)$($cfbright)████$($OFF)$($cf)████$($Bf)██
-                   $($Bf)██$($yf)$($ON)$($yfbright)██$($OFF)$($yf)████$($Bf)██                     $($Bf)██$($gf)$($ON)$($gfbright)██████$($OFF)$($gf)██████$($Bf)██        $($Bf)██$($bf)$($ON)$($bfbright)██████$($OFF)$($bf)██████$($Bf)██        $($Bf)██$($rf)$($ON)$($rfbright)██████$($OFF)$($rf)██████$($Bf)██        $($Bf)██$($pf)$($ON)$($pfbright)██████$($OFF)$($pf)██████$($Bf)██        $($Bf)██$($cf)$($ON)$($cfbright)██████$($OFF)$($cf)██████$($Bf)██
-                 $($Bf)██$($yf)██$($ON)$($yfbright)████$($OFF)$($yf)████$($Bf)██                 $($Bf)██$($gf)$($ON)$($gfbright)██$($OFF)$($gf)██$($ON)$($gfbright)██$($OFF)$($gf)██$($Bf)██$($gf)██$($Bf)██$($gf)██$($Bf)██    $($Bf)██$($bf)$($ON)$($bfbright)██$($OFF)$($bf)██$($ON)$($bfbright)██$($OFF)$($bf)██$($Bf)██$($bf)██$($Bf)██$($bf)██$($Bf)██    $($Bf)██$($rf)$($ON)$($rfbright)██$($OFF)$($rf)██$($ON)$($rfbright)██$($OFF)$($rf)██$($Bf)██$($rf)██$($Bf)██$($rf)██$($Bf)██    $($Bf)██$($pf)$($ON)$($pfbright)██$($OFF)$($pf)██$($ON)$($pfbright)██$($OFF)$($pf)██$($Bf)██$($pf)██$($Bf)██$($pf)██$($Bf)██    $($Bf)██$($cf)$($ON)$($cfbright)██$($OFF)$($cf)██$($ON)$($cfbright)██$($OFF)$($cf)██$($Bf)██$($cf)██$($Bf)██$($cf)██$($Bf)██
-                 $($Bf)██$($yf)████$($ON)$($yfbright)██$($OFF)$($yf)████$($Bf)██                 $($Bf)██$($gf)$($ON)$($gfbright)████$($OFF)$($gf)██████$($Bf)██$($gf)████$($Bf)██    $($Bf)██$($bf)$($ON)$($bfbright)████$($OFF)$($bf)██████$($Bf)██$($bf)████$($Bf)██    $($Bf)██$($rf)$($ON)$($rfbright)████$($OFF)$($rf)██████$($Bf)██$($rf)████$($Bf)██    $($Bf)██$($pf)$($ON)$($pfbright)████$($OFF)$($pf)██████$($Bf)██$($pf)████$($Bf)██    $($Bf)██$($cf)$($ON)$($cfbright)████$($OFF)$($cf)██████$($Bf)██$($cf)████$($Bf)██
-               $($Bf)██$($yf)██████$($ON)$($yfbright)████$($OFF)$($yf)████$($Bf)██               $($Bf)██$($gf)$($ON)$($gfbright)████$($OFF)$($gf)██████$($Bf)██$($gf)████$($Bf)██    $($Bf)██$($bf)$($ON)$($bfbright)████$($OFF)$($bf)██████$($Bf)██$($bf)████$($Bf)██    $($Bf)██$($rf)$($ON)$($rfbright)████$($OFF)$($rf)██████$($Bf)██$($rf)████$($Bf)██    $($Bf)██$($pf)$($ON)$($pfbright)████$($OFF)$($pf)██████$($Bf)██$($pf)████$($Bf)██    $($Bf)██$($cf)$($ON)$($cfbright)████$($OFF)$($cf)██████$($Bf)██$($cf)████$($Bf)██
-               $($Bf)██$($yf)████████$($ON)$($yfbright)██$($OFF)$($yf)████$($Bf)██               $($Bf)██$($gf)$($ON)$($gfbright)████$($OFF)$($gf)██████$($Bf)██$($gf)████$($Bf)██    $($Bf)██$($bf)$($ON)$($bfbright)████$($OFF)$($bf)██████$($Bf)██$($bf)████$($Bf)██    $($Bf)██$($rf)$($ON)$($rfbright)████$($OFF)$($rf)██████$($Bf)██$($rf)████$($Bf)██    $($Bf)██$($pf)$($ON)$($pfbright)████$($OFF)$($pf)██████$($Bf)██$($pf)████$($Bf)██    $($Bf)██$($cf)$($ON)$($cfbright)████$($OFF)$($cf)██████$($Bf)██$($cf)████$($Bf)██
-             $($Bf)██████████████████████             $($Bf)██$($gf)$($ON)$($gfbright)████$($OFF)$($gf)██████$($Bf)██$($gf)████$($Bf)██    $($Bf)██$($bf)$($ON)$($bfbright)████$($OFF)$($bf)██████$($Bf)██$($bf)████$($Bf)██    $($Bf)██$($rf)$($ON)$($rfbright)████$($OFF)$($rf)██████$($Bf)██$($rf)████$($Bf)██    $($Bf)██$($pf)$($ON)$($pfbright)████$($OFF)$($pf)██████$($Bf)██$($pf)████$($Bf)██    $($Bf)██$($cf)$($ON)$($cfbright)████$($OFF)$($cf)██████$($Bf)██$($cf)████$($Bf)██
-           $($Bf)██$($yf)██$($Bf)██              ██$($yf)██$($Bf)██           $($Bf)██$($gf)$($ON)$($gfbright)████$($OFF)$($gf)██████$($Bf)██$($gf)████$($Bf)██    $($Bf)██$($bf)$($ON)$($bfbright)████$($OFF)$($bf)██████$($Bf)██$($bf)████$($Bf)██    $($Bf)██$($rf)$($ON)$($rfbright)████$($OFF)$($rf)██████$($Bf)██$($rf)████$($Bf)██    $($Bf)██$($pf)$($ON)$($pfbright)████$($OFF)$($pf)██████$($Bf)██$($pf)████$($Bf)██    $($Bf)██$($cf)$($ON)$($cfbright)████$($OFF)$($cf)██████$($Bf)██$($cf)████$($Bf)██
-         $($Bf)██$($yf)██████$($Bf)██          ██$($yf)██████$($Bf)██         $($Bf)██$($gf)$($ON)$($gfbright)████$($OFF)$($gf)██████$($Bf)██$($gf)████$($Bf)██    $($Bf)██$($bf)$($ON)$($bfbright)████$($OFF)$($bf)██████$($Bf)██$($bf)████$($Bf)██    $($Bf)██$($rf)$($ON)$($rfbright)████$($OFF)$($rf)██████$($Bf)██$($rf)████$($Bf)██    $($Bf)██$($pf)$($ON)$($pfbright)████$($OFF)$($pf)██████$($Bf)██$($pf)████$($Bf)██    $($Bf)██$($cf)$($ON)$($cfbright)████$($OFF)$($cf)██████$($Bf)██$($cf)████$($Bf)██   
-         $($Bf)██$($yf)██████$($Bf)██          ██$($yf)$($ON)$($yfbright)██$($OFF)$($yf)████$($Bf)██         $($Bf)██$($gf)$($ON)$($gfbright)██$($OFF)$($gf)██$($ON)$($gfbright)██$($OFF)$($gf)████$($Bf)██$($gf)████$($Bf)██    $($Bf)██$($bf)$($ON)$($bfbright)██$($OFF)$($bf)██$($ON)$($bfbright)██$($OFF)$($bf)████$($Bf)██$($bf)████$($Bf)██    $($Bf)██$($rf)$($ON)$($rfbright)██$($OFF)$($rf)██$($ON)$($rfbright)██$($OFF)$($rf)████$($Bf)██$($rf)████$($Bf)██    $($Bf)██$($pf)$($ON)$($pfbright)██$($OFF)$($pf)██$($ON)$($pfbright)██$($OFF)$($pf)████$($Bf)██$($pf)████$($Bf)██    $($Bf)██$($cf)$($ON)$($cfbright)██$($OFF)$($cf)██$($ON)$($cfbright)██$($OFF)$($cf)████$($Bf)██$($cf)████$($Bf)██
-       $($Bf)██$($yf)██████████$($Bf)██      ██$($yf)██$($ON)$($yfbright)████$($OFF)$($yf)████$($Bf)██       $($Bf)██$($gf)██████$($ON)$($gfbright)██$($OFF)$($gf)$($Bf)██$($gf)██$($Bf)██$($gf)██$($Bf)██    $($Bf)██$($bf)██████$($ON)$($bfbright)██$($OFF)$($bf)$($Bf)██$($bf)██$($Bf)██$($bf)██$($Bf)██    $($Bf)██$($rf)██████$($ON)$($rfbright)██$($OFF)$($rf)$($Bf)██$($rf)██$($Bf)██$($rf)██$($Bf)██    $($Bf)██$($pf)██████$($ON)$($pfbright)██$($OFF)$($pf)$($Bf)██$($pf)██$($Bf)██$($pf)██$($Bf)██    $($Bf)██$($cf)██████$($ON)$($cfbright)██$($OFF)$($cf)$($Bf)██$($cf)██$($Bf)██$($cf)██$($Bf)██
-       $($Bf)██$($yf)$($ON)$($yfbright)██$($OFF)$($yf)████████$($Bf)██      ██$($yf)████$($ON)$($yfbright)██$($OFF)$($yf)████$($Bf)██         $($Bf)██$($gf)████████████$($Bf)██        $($Bf)██$($bf)████████████$($Bf)██        $($Bf)██$($rf)████████████$($Bf)██        $($Bf)██$($pf)████████████$($Bf)██        $($Bf)██$($cf)████████████$($Bf)██
-     $($Bf)██$($yf)██$($ON)$($yfbright)████$($OFF)$($yf)████████$($Bf)██  ██$($yf)██████$($ON)$($yfbright)████$($OFF)$($yf)████$($Bf)██         $($Bf)██$($gf)████████$($Bf)██            $($Bf)██$($bf)████████$($Bf)██            $($Bf)██$($rf)████████$($Bf)██            $($Bf)██$($pf)████████$($Bf)██            $($Bf)██$($cf)████████$($Bf)██
-     $($Bf)██$($yf)████$($ON)$($yfbright)██$($OFF)$($yf)████████$($Bf)██  ██$($yf)████████$($ON)$($yfbright)██$($OFF)$($yf)████$($Bf)██           $($Bf)██$($gf)████$($Bf)██                $($Bf)██$($bf)████$($Bf)██                $($Bf)██$($rf)████$($Bf)██                $($Bf)██$($pf)████$($Bf)██                $($Bf)██$($cf)████$($Bf)██
-     $($Bf)██████████████████████████████████████             $($Bf)████                    $($Bf)████                    $($Bf)████                    $($Bf)████                    $($Bf)████$($reset)
+                       $blf██                               $blf████                    $blf████                    $blf████                    $blf████                    $blf████
+                     $blf██$yf██$blf██                           $blf██$gf$ON$gfbright██$OFF$gf██$blf██                $blf██$bf$ON$bfbright██$OFF$bf██$blf██                $blf██$rf$ON$rfbright██$OFF$rf██$blf██                $blf██$pf$ON$pfbright██$OFF$pf██$blf██                $blf██$cf$ON$cfbright██$OFF$cf██$blf██
+                   $blf██$yf██████$blf██                       $blf██$gf$ON$gfbright████$OFF$gf████$blf██            $blf██$bf$ON$bfbright████$OFF$bf████$blf██            $blf██$rf$ON$rfbright████$OFF$rf████$blf██            $blf██$pf$ON$pfbright████$OFF$pf████$blf██            $blf██$cf$ON$cfbright████$OFF$cf████$blf██
+                   $blf██$yf$ON$yfbright██$OFF$yf████$blf██                     $blf██$gf$ON$gfbright██████$OFF$gf██████$blf██        $blf██$bf$ON$bfbright██████$OFF$bf██████$blf██        $blf██$rf$ON$rfbright██████$OFF$rf██████$blf██        $blf██$pf$ON$pfbright██████$OFF$pf██████$blf██        $blf██$cf$ON$cfbright██████$OFF$cf██████$blf██
+                 $blf██$yf██$ON$yfbright████$OFF$yf████$blf██                 $blf██$gf$ON$gfbright██$OFF$gf██$ON$gfbright██$OFF$gf██$blf██$gf██$blf██$gf██$blf██    $blf██$bf$ON$bfbright██$OFF$bf██$ON$bfbright██$OFF$bf██$blf██$bf██$blf██$bf██$blf██    $blf██$rf$ON$rfbright██$OFF$rf██$ON$rfbright██$OFF$rf██$blf██$rf██$blf██$rf██$blf██    $blf██$pf$ON$pfbright██$OFF$pf██$ON$pfbright██$OFF$pf██$blf██$pf██$blf██$pf██$blf██    $blf██$cf$ON$cfbright██$OFF$cf██$ON$cfbright██$OFF$cf██$blf██$cf██$blf██$cf██$blf██
+                 $blf██$yf████$ON$yfbright██$OFF$yf████$blf██                 $blf██$gf$ON$gfbright████$OFF$gf██████$blf██$gf████$blf██    $blf██$bf$ON$bfbright████$OFF$bf██████$blf██$bf████$blf██    $blf██$rf$ON$rfbright████$OFF$rf██████$blf██$rf████$blf██    $blf██$pf$ON$pfbright████$OFF$pf██████$blf██$pf████$blf██    $blf██$cf$ON$cfbright████$OFF$cf██████$blf██$cf████$blf██
+               $blf██$yf██████$ON$yfbright████$OFF$yf████$blf██               $blf██$gf$ON$gfbright████$OFF$gf██████$blf██$gf████$blf██    $blf██$bf$ON$bfbright████$OFF$bf██████$blf██$bf████$blf██    $blf██$rf$ON$rfbright████$OFF$rf██████$blf██$rf████$blf██    $blf██$pf$ON$pfbright████$OFF$pf██████$blf██$pf████$blf██    $blf██$cf$ON$cfbright████$OFF$cf██████$blf██$cf████$blf██
+               $blf██$yf████████$ON$yfbright██$OFF$yf████$blf██               $blf██$gf$ON$gfbright████$OFF$gf██████$blf██$gf████$blf██    $blf██$bf$ON$bfbright████$OFF$bf██████$blf██$bf████$blf██    $blf██$rf$ON$rfbright████$OFF$rf██████$blf██$rf████$blf██    $blf██$pf$ON$pfbright████$OFF$pf██████$blf██$pf████$blf██    $blf██$cf$ON$cfbright████$OFF$cf██████$blf██$cf████$blf██
+             $blf██████████████████████             $blf██$gf$ON$gfbright████$OFF$gf██████$blf██$gf████$blf██    $blf██$bf$ON$bfbright████$OFF$bf██████$blf██$bf████$blf██    $blf██$rf$ON$rfbright████$OFF$rf██████$blf██$rf████$blf██    $blf██$pf$ON$pfbright████$OFF$pf██████$blf██$pf████$blf██    $blf██$cf$ON$cfbright████$OFF$cf██████$blf██$cf████$blf██
+           $blf██$yf██$blf██              ██$yf██$blf██           $blf██$gf$ON$gfbright████$OFF$gf██████$blf██$gf████$blf██    $blf██$bf$ON$bfbright████$OFF$bf██████$blf██$bf████$blf██    $blf██$rf$ON$rfbright████$OFF$rf██████$blf██$rf████$blf██    $blf██$pf$ON$pfbright████$OFF$pf██████$blf██$pf████$blf██    $blf██$cf$ON$cfbright████$OFF$cf██████$blf██$cf████$blf██
+         $blf██$yf██████$blf██          ██$yf██████$blf██         $blf██$gf$ON$gfbright████$OFF$gf██████$blf██$gf████$blf██    $blf██$bf$ON$bfbright████$OFF$bf██████$blf██$bf████$blf██    $blf██$rf$ON$rfbright████$OFF$rf██████$blf██$rf████$blf██    $blf██$pf$ON$pfbright████$OFF$pf██████$blf██$pf████$blf██    $blf██$cf$ON$cfbright████$OFF$cf██████$blf██$cf████$blf██   
+         $blf██$yf██████$blf██          ██$yf$ON$yfbright██$OFF$yf████$blf██         $blf██$gf$ON$gfbright██$OFF$gf██$ON$gfbright██$OFF$gf████$blf██$gf████$blf██    $blf██$bf$ON$bfbright██$OFF$bf██$ON$bfbright██$OFF$bf████$blf██$bf████$blf██    $blf██$rf$ON$rfbright██$OFF$rf██$ON$rfbright██$OFF$rf████$blf██$rf████$blf██    $blf██$pf$ON$pfbright██$OFF$pf██$ON$pfbright██$OFF$pf████$blf██$pf████$blf██    $blf██$cf$ON$cfbright██$OFF$cf██$ON$cfbright██$OFF$cf████$blf██$cf████$blf██
+       $blf██$yf██████████$blf██      ██$yf██$ON$yfbright████$OFF$yf████$blf██       $blf██$gf██████$ON$gfbright██$OFF$gf$blf██$gf██$blf██$gf██$blf██    $blf██$bf██████$ON$bfbright██$OFF$bf$blf██$bf██$blf██$bf██$blf██    $blf██$rf██████$ON$rfbright██$OFF$rf$blf██$rf██$blf██$rf██$blf██    $blf██$pf██████$ON$pfbright██$OFF$pf$blf██$pf██$blf██$pf██$blf██    $blf██$cf██████$ON$cfbright██$OFF$cf$blf██$cf██$blf██$cf██$blf██
+       $blf██$yf$ON$yfbright██$OFF$yf████████$blf██      ██$yf████$ON$yfbright██$OFF$yf████$blf██         $blf██$gf████████████$blf██        $blf██$bf████████████$blf██        $blf██$rf████████████$blf██        $blf██$pf████████████$blf██        $blf██$cf████████████$blf██
+     $blf██$yf██$ON$yfbright████$OFF$yf████████$blf██  ██$yf██████$ON$yfbright████$OFF$yf████$blf██         $blf██$gf████████$blf██            $blf██$bf████████$blf██            $blf██$rf████████$blf██            $blf██$pf████████$blf██            $blf██$cf████████$blf██
+     $blf██$yf████$ON$yfbright██$OFF$yf████████$blf██  ██$yf████████$ON$yfbright██$OFF$yf████$blf██           $blf██$gf████$blf██                $blf██$bf████$blf██                $blf██$rf████$blf██                $blf██$pf████$blf██                $blf██$cf████$blf██
+     $blf██████████████████████████████████████             $blf████                    $blf████                    $blf████                    $blf████                    $blf████$reset
 
 "@

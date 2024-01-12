@@ -1,11 +1,12 @@
+$esc = [char]27
 Write-Host
 for ($f = 0; $f -le 6; $f++) {
-    Write-Host -NoNewline "`e[$(($f+41))m`e[$(($f+30))m██▓▒░"
+    Write-Host -NoNewline "$esc[$(($f+41))m$esc[$(($f+30))m██▓▒░"
 }
-Write-Host -NoNewline "`e[37m██`e[0m`n`n"
+Write-Host "$esc[37m██$esc[0m"
+Write-Host
 for ($f = 0; $f -le 6; $f++) {
-    Write-Host -NoNewline "`e[$(($f+41))m`e[1;$(($f+90))m██▓▒░"
+    Write-Host -NoNewline "$esc[$(($f+41))m$esc[1;$(($f+90))m██▓▒░"
 }
-Write-Host -NoNewline "`e[1;37m██"
-Write-Host "`e[0m"
+Write-Host "$esc[1;37m██$esc[0m"
 Write-Host

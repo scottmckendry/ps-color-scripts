@@ -17,15 +17,18 @@ $colors = @(
     "#ffffff"  # White
 )
 
-Write-Host "`e[1;37m"
-Write-Host " Black    Red      Green    Yellow   Blue     Magenta   Cyan    White"
-Write-Host "──────────────────────────────────────────────────────────────────────`e[0m"
-for ($i = 0; $i -lt 8; $i++) {
-    Write-Host -NoNewline "`e[$($i + 30)m $($colors[$i]) `e[0m"
-}
-Write-Host "`n"
-for ($i = 8; $i -lt 16; $i++) {
-    Write-Host -NoNewline "`e[1;$($i + 22)m $($colors[$i]) `e[0m"
-}
-Write-Host "`n"
+$esc = [char]27
 
+Write-Host "$esc[1;37m"
+Write-Host " Black    Red      Green    Yellow   Blue     Magenta   Cyan    White"
+Write-Host "──────────────────────────────────────────────────────────────────────$esc[0m"
+for ($i = 0; $i -lt 8; $i++) {
+    Write-Host -NoNewline "$esc[$($i + 30)m $($colors[$i]) $esc[0m"
+}
+Write-Host
+Write-Host
+for ($i = 8; $i -lt 16; $i++) {
+    Write-Host -NoNewline "$esc[1;$($i + 22)m $($colors[$i]) $esc[0m"
+}
+Write-Host
+Write-Host

@@ -1,4 +1,4 @@
-$esc = "`e"
+$esc = [char]27
 
 Write-Host
 

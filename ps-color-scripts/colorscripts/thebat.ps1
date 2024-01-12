@@ -1,5 +1,7 @@
-$f3="`e[33m"
-$rst="`e[0m"
+$esc = [char]27
+
+$f3 = "$esc[33m"
+$rst = "$esc[0m"
 
 Write-Host @"
  

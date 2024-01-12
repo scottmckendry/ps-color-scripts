@@ -1,12 +1,12 @@
-$esc = "`e"
+$esc = [char]27
 
-$red = "$($esc)[31m"
-$green = "$($esc)[32m"
-$yellow = "$($esc)[33m"
-$blue = "$($esc)[34m"
-$magenta = "$($esc)[35m"
-$cyan = "$($esc)[36m"
-$reset = "$($esc)[0m"
+$red = "$esc[31m"
+$green = "$esc[32m"
+$yellow = "$esc[33m"
+$blue = "$esc[34m"
+$magenta = "$esc[35m"
+$cyan = "$esc[36m"
+$reset = "$esc[0m"
 
 $ic = $reset
 $c0 = $reset + $red
