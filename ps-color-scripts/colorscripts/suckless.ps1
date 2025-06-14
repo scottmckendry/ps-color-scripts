@@ -1,4 +1,4 @@
-$esc = [char]27
+﻿$esc = [char]27
 
 $bold = "$esc[1m"
 $blue = "$esc[34m"

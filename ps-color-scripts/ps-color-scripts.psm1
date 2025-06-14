@@ -1,4 +1,4 @@
-function Show-ColorScript {
+﻿function Show-ColorScript {
     <#
     .SYNOPSIS
         Prints a random color script to the console.

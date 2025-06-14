@@ -1,4 +1,4 @@
-$T = 'gYw'   # The test text
+﻿$T = 'gYw'   # The test text
 $esc = [char]27
 
 Write-Host

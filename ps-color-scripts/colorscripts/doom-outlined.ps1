@@ -1,4 +1,4 @@
-$esc = [char]27
+﻿$esc = [char]27
 
 $redfbright = "$esc[91m"
 $yellowfbright = "$esc[93m"

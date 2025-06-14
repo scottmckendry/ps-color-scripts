@@ -1,4 +1,4 @@
-$esc = [char]27
+﻿$esc = [char]27
 Write-Host "$esc[0m
     $esc[49;35m|$esc[49;31m|$esc[101;31m|$esc[41;97m|$esc[49;91m|$esc[49;93m|$esc[0m
   $esc[105;35m|$esc[45;97m|$esc[49;97m||$esc[100;97m||$esc[49;37m||$esc[103;33m|$esc[43;97m|$esc[0m

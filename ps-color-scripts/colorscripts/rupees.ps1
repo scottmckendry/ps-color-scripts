@@ -1,4 +1,4 @@
-$esc = [char]27
+﻿$esc = [char]27
 
 $blf = "$esc[30m"
 $rf = "$esc[31m"

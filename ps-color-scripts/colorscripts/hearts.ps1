@@ -1,4 +1,4 @@
-$esc = [char]27
+﻿$esc = [char]27
 
 $f1="$esc[30m"
 $f2="$esc[31m"

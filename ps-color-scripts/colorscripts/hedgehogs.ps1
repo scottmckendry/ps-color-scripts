@@ -1,4 +1,4 @@
-$esc = [char]27
+﻿$esc = [char]27
 $red = "$esc[31m"
 $grn = "$esc[32m"
 $ylw = "$esc[33m"

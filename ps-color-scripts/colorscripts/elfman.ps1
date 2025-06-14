@@ -1,4 +1,4 @@
-$esc = [char]27
+﻿$esc = [char]27
 $whitefbright = "$esc[97m"
 $cyanb = "$esc[46m"
 $blackb = "$esc[40m"

@@ -1,4 +1,4 @@
-$esc = [char]27
+﻿$esc = [char]27
 
 $blackf = "$esc[30m"
 $yellowb = "$esc[43m"

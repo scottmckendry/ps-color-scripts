@@ -1,4 +1,4 @@
-$esc = [char]27
+﻿$esc = [char]27
 
 function pcs {
     for ($i=0; $i -le 7; $i++) {

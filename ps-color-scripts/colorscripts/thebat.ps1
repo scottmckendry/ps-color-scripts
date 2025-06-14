@@ -1,4 +1,4 @@
-$esc = [char]27
+﻿$esc = [char]27
 
 $f3 = "$esc[33m"
 $rst = "$esc[0m"

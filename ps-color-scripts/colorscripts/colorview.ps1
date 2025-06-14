@@ -1,4 +1,4 @@
-$esc = [char]27
+﻿$esc = [char]27
 $FGNAMES = @(' black ', '  red  ', ' green ', ' yellow', '  blue ', 'magenta', '  cyan ', ' white ')
 $BGNAMES = @('DFT', 'BLK', 'RED', 'GRN', 'YEL', 'BLU', 'MAG', 'CYN', 'WHT')
 

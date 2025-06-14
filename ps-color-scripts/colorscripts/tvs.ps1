@@ -1,4 +1,4 @@
-$esc = [char]27
+﻿$esc = [char]27
 $reset = "$esc[0m"
 
 $f1 = "$esc[30m"

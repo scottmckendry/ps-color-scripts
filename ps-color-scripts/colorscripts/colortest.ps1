@@ -1,4 +1,4 @@
-$esc = [char]27
+﻿$esc = [char]27
 $T = '•••'   # The text for the color test
 
 Write-Host

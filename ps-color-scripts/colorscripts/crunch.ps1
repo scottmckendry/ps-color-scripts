@@ -1,4 +1,4 @@
-$esc = [char]27
+﻿$esc = [char]27
 
 $redf = "$esc[31m"
 $greenf = "$esc[32m"

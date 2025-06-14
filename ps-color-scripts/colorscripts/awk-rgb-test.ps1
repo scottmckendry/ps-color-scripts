@@ -1,4 +1,4 @@
-$esc = [char]27
+﻿$esc = [char]27
 
 Write-Host
 Write-Host "This should be a smooth gradient"
